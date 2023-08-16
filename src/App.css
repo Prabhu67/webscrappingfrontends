@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Merriweather Sans', sans-serif;
+ background-image: linear-gradient(to right, rgb(131, 230, 122),rgb(154, 192, 209),rgb(224, 68, 154));
+	color: #ececec;
+}
+
+h2{
+	text-align: center;
+	margin-bottom: 5rem;
+	font-size: 2rem;
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #fffdfd;
+	color: #21201e;
+	text-align: center;
+	width: 280px;
+	height: 500px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 15px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+/* .product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+} */
+
+.product img {
+	height: 150px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
+
+.product-offer{
+	display: flex;
+	gap: 0.5rem;
+	justify-content: center;
+	align-items: center;
+}
+.product-offer .p2{
+	  font-size: small;
+	  color: rgb(8, 107, 8);
+}
+.product-offer .p3  {
+	  background: #007aff;
+	  padding: 4px 10px;
+	  font-size: 0.8rem;
+	  color: #ffffff;
+	  border-radius: 5px;		
+}
+
+.product-info .product-price{
+	  background: #f1c953;
+	  padding: 4px 0px;
+	  font-size: 1rem;
+	  color: #0e0e0e;
+	  border-radius: 100px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  gap: 1rem;
+	  margin: 10px;
+}
+.product-info .p1{
+	font-size: small;
+}
+.source{
+	display: flex;
+	justify-content: center;
+	color: brown;
+}
+
+.search-bar{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+ font-weight: bolder;
+ color:black;
+
+}
+.link-product{
+	color: #f1c953;
+}
+
